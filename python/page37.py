@@ -6,13 +6,12 @@ import time
 
 #定义网站的头部
 headers = {
-    'User-Agent': Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 
-    (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+   ' User-Agent ' :'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
 }
 
 #定义一个判断男女的类
 def judgement_sex(class_name):
-    if class_name == ['member_ico1']#member是网页的设定的判断条件
+    if class_name == ['member_ico1']: #member是网页的设定的判断条件
         return '女'
     else:
         return '男'
@@ -47,7 +46,7 @@ def get_info(url):
     #将从一个网页获取到的数据传输到数组当中,然后使用列表的方式进行输出
     for title,address,price,img,name,sex in zip(titles,addresses,prices,imgs,names,sexs):
             data = {
-                'title':title:get_text().strip(),
+                'title':title.get_text().strip(),
                 'address':address.get_text().strip(),
                 'price':price.get_text().strip(),
                 'img':img.get("sec"),
@@ -61,7 +60,7 @@ def get_info(url):
     #通过循环的获取进入不同的url,，进入去的页
     if __name__ == '__main__':
         #创造出一个urls数组,通过规律来进行对url的组装
-        urls = [htpp://bj.xiaozhu.com/serach-duanzufang-p{}-0/'.format(number)for number in range(1,14)]
+        urls = ['http://bj.xiaozhu.com/serach-duanzufang-p{}-0/'.format(number)for number in range(1,14)]
         #通过循环每一个url的内容的爬取
         for single_url in urls:
             get_links(single_url)#调用get_links函数，分别传递获取到的url
