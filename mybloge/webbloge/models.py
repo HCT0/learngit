@@ -11,7 +11,4 @@ class comment(models.Model):
     user_name = models.CharField(max_length=1000)
     user_comment = models.CharField(max_length=1000)
     passage_class = models.CharField(max_length=1000)
-    
-
-
 
