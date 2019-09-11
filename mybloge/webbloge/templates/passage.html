@@ -1,0 +1,61 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <title>HC&T</title>
+    <meta charset="UTF-8">
+</head>
+<link rel="stylesheet" href="{% static 'css/passage.css'%}">
+<script src="{% static 'js/form.js'%}"></script>
+<body>  
+    {% for passage in t %}
+    <h1 id="passage-title"> {{passage.title}}</h1>
+        <p id="passage-body">    
+        {{passage.body}}</p> 
+    {% endfor %} 
+
+    <table  id="comment-view"> 
+        {% for a in c %}
+        <tr>
+            <td id="user-name">
+            {{ a.user_name}}
+            </td>
+            <td id="user-comment">
+            {{ a.user_comment}}
+            </td>
+        </tr>  
+        {% endfor %}  
+    </table>
+    
+    <form action="">
+        <input id="more-comment-button" type="button"  onclick="" value="点击查看更多评论">
+    </form>
+
+    <form action="">
+        <input id="submit-button" type="button" onclick="adding_comment('comment-submit-area')" value="点击添加评论">
+    </form>
+    
+    <!--这个是进行评论区-->
+    <div id="comment-submit-area-body">
+        
+        <div id="comment-submit-area">
+            <form action="">
+                <table>
+                <tr>
+                    <td><input id="text-user-name" type="text" value="请在这里输入用户名" name="user-name"></td>
+                    <!--<td><input id="text-e-mail" type="text" value="请在这里输入邮件" name="e-main"></td>
+                --></tr>
+                <tr>  
+                    <td><textarea id="text-comment">想对博主说什么：)</textarea></td>
+                </tr> 
+                <tr> 
+                    <td><input id="text-sure" type="button" name="comment-submit" onclick="suer_comment('text-sure')" value="确认评论"></td>
+                    <td><input id="text-unsure" type="button" name="comment-submit" onclick="unsure('comment-submit-area')" value="取消评论"></td>
+                </tr>       
+                </table>
+            </form>
+        </div>
+        
+    </div>
+    </body>
+</html>

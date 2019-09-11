@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>	
+<head>
+	<title>博客</title>
+	<meta charset="UTF-8">
+</head>
+<!--这个是文件导入区域-->
+<link rel="stylesheet" href="{% static 'css/basicbackgound.css'%}">
+<link rel="stylesheet" href="{% static 'css/passageset-first.css'%}">
+<link rel="stylesheet" href="{% static 'css/passageset-back.css'%}">
+<link rel="stylesheet" href="{% static 'css/passage.css'%}">
+<script type='text/javascript' src="{% static 'js/carton.js' %}"></script>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<body>
+	<div class="main">
+	<!--背景图片-->
+		<img class="backgound" src="{% static 'images/博客风格/bgimage23.jpeg'%}">
+	<!--这是四个箭头-->
+		<a href="javascript:void(0);" onclick="topfunction('front')"><img id="top" src="{% static 'images/博客风格/top13.png'%}"></a>
+		<a href="javascript:void(0);" onclick="topfunction('catelog')" ><img id="right" src="{% static 'images/博客风格/right13.png'%}"></a>
+		<a href="javascript:void(0);" onclick="topfunction('footer')"><img id="bottom" src="{% static 'images/博客风格/bottom13.png'%}"></a>
+		<a href="javascript:void(0);" onclick="topfunction('bloger')"><img id="left" src="{% static 'images/博客风格/left13.png'%}"></a>
+		<a href="javascript:void(0);"><p class="first">HIDE C& TRUTH</p></a>
+		<a href="javascript:void(0);"><p class="second">MY BLOGE —HC&T</p></a>
+		
+		<!--这个是四个区域-->
+		<div id="front" style="display: none;"> 
+			<a href="javascript:void(0);">技术博客</a>
+			</div>
+		<div id="bloger" style="display: none;">
+			</div>
+		<div id="catelog"style="display: none;">
+			</div>
+
+		<!--这个是隐藏的下面的区域-->
+		
+		<div id="footer" style="display: none;">
+			<!--这里是文章展示区域-->
+			
+			{% for title in t %}
+			<a id="footer-a" href="{% url 'passage_html' title.id %}" target="_blank">
+				<div id="footer-passage1">
+					<div id="footer-passage1-head">
+						<p id="f-title">{{title.title}}</p>
+					</div>	 	
+					<div id="footer-passage1-body">
+						<p id="f-kind">{{title.kind}}</p>
+					</div>
+					<div id="footer-passage1-footer">
+						<h4>浏览人数:</h4>
+						<p id="f-viewer">{{title.viewer}}</p>
+					</div>
+				</div>
+			</a>
+			{% endfor %}
+			<div id="page">
+				<a id="page-head" href="javascript:void(0)" onclick="page_head('page-head')"> 首页 </a>&nbsp;
+				<a id="pre-page" href="javascript:void(0)" onclick="pre_page('pre-page')"> 上一页 </a>&nbsp;
+				<a>第</a>&nbsp;
+					<a id="page-first" href="javascript:void(0)" onclick="page_first('page-number')"> 1 </a>&nbsp;
+				<a>页</a>&nbsp;
+				<a id="next-page" href="javascript:void(0)" onclick="next_page('next-page')"> 下一页 </a>&nbsp;
+				<a id="last-page" href="javascript:void(0)" onclick="last_page('last-page')"> 尾页 </a>&nbsp;
+				<a>共</a>	
+				<a id="all-page" href="javascript:void(0)">{{ c }}</a>
+				<a>页</a>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
