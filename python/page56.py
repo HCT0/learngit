@@ -22,20 +22,20 @@ def get_info(url):
     info_lists.append(info)
 
 if __name__ =='__main__':
-    #format
-    #循环
-    #列表
+    #format--ok
+    #循环-ok
+    #列表 --ok
     urls =['http://www.qiushibaike.com/text/page/{}/'.format(str(i)) for i in range(1,36)]
     for url in urls :
         get_info(url)
     for info_list  in info_lists:
         f =open('C:/Users/龙重文/learngit/python/qiushibaike.txt','a+')
-        f.write(info_list['id']+'\n')
+        
+        f.write(info_list['id'] + '\n')
         f.close()
 
     """
-        浏览器中select和xpath的使用
-        git在VScode的使用
+        浏览器中select和xpath的使用-ok
         
     """
     
