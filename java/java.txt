@@ -1,0 +1,64 @@
+import java.util.Scanner; 
+public class spin_matrix {
+    public static void main(String []args) {
+    System.out.print("请输入你想要的方阵的宽度\n");   
+Scanner  n = new Scanner(System.in);
+
+        int [][] a =new int[n][n];//定义一个长度为n二维数组
+        int strander=n;//用来记录可以移动的长度
+        int length=0;//记载数字的初始位置
+        int dou=1;//用来作为移动长度改变的标志
+        int x=0,y=0;//坐标
+        int dir=1;//这个是方向标志
+        for(int i=1;i<=n*n;i++)//循环n的平方次
+        {   
+            System.out.println(i);
+            if(i-length==strander)//进行边界的判断，相等就是达到边界
+            {   
+                System.out.println("test1 ");
+                dou++;//判断移动长度是否要改变
+                if(2==dou)//要改变
+                {
+                    strander--;
+                    dou=0;
+                }
+                System.out.println("test2");
+	            length=i;
+                dir++;
+                if(5==dir)
+                    dir=1;
+                System.out.println("test3");
+                    
+                /*if(1==dir)//不同的数字代表不同的坐标移动
+                    x--;
+                if(2==dir)
+                    y--;
+                if(3==dir)
+                    x++;
+                if(4==dir)
+                    y++;    
+                */System.out.println("test4");
+            }
+            a[x][y]=i;
+            if(1==dir)//不同的数字代表不同的坐标移动
+                x++;
+            if(2==dir)
+                y++;
+            if(3==dir)
+                x--;
+            if(4==dir)
+                y--;
+            
+           
+        }
+	for(int i=0;i<n;i++)//输出函数
+	   { 
+	        for(int m=0;m<n;m++)
+            {   
+                System.out.print(a[m][i]);
+                System.out.print(' ');
+            }
+            System.out.print('\n');
+        }	
+	}
+}
