@@ -40,10 +40,8 @@ def kata():
 if __name__ == '__main__':
     print_time = Process(target = print_time)
     print_time.start()
-    
     gaokao = Process(target = gaokao)
     gaokao.start()
-    
     dongjing = Process(target = dongjing)
     dongjing.start()
     
@@ -58,4 +56,3 @@ if __name__ == '__main__':
     dongjing.join()
     beijin.join()
     kata.join()
-    
