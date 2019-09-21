@@ -42,10 +42,8 @@ if __name__ == '__main__':
     gaokao_o.start()
     dongjing_o = Process(target = dongjing)
     dongjing_o.start()
-    
     beijin_o = Process(target = beijin)
     beijin_o.start()
-    
     kata_o = Process(target = kata)
     kata_o.start()
 
