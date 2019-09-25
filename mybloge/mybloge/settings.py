@@ -75,18 +75,12 @@ WSGI_APPLICATION = 'mybloge.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-        'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'NAME': 'mysql',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'OPTIONS': {
-            'sql_mode': 'traditional',
-            },
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -124,9 +118,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS=(
 
-os.path.join(BASE_DIR,'static'),
+#静态文件地址
+STATIC_URL = 'static/'
+#STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
-)
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'static'),
+ ]
+

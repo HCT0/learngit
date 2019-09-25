@@ -1,0 +1,257 @@
+	#footer-passage1
+	{
+		width: 20%;
+		height:35%;
+		float: left;
+		border: solid 2px black;
+		box-sizing: border-box;	
+		margin-top:5%;
+		margin-left:4%;
+		overflow: visible;
+	}
+	#footer-passage1-head
+	{
+		width: 100%;	
+		height:25%;
+		border: solid 2px red;
+		box-sizing: border-box;	
+		float: left;	
+	}
+	#footer-passage1-head p
+	{
+		color:white;
+		overflow: visible;
+		font-size:16px;
+	}
+	#footer-passage1-body
+	{
+		float: left;
+		width: 100%;
+		height:50%;
+		border: solid 2px blueviolet;
+		box-sizing: border-box;	
+		overflow: visible;
+	}
+	#footer-passage1-body p
+	{
+		color:white;
+		overflow: visible;
+		font-size: 60px;
+		text-align: center;
+		padding: top 15%;
+	}
+	#footer-passage1-footer
+	{
+		width: 100%;
+		height:25%;
+		border: solid 2px green;
+		box-sizing: border-box;	
+		float: left;
+		overflow: visible;
+	}
+	#footer-passage1-footer p
+	{
+		color:white;
+		overflow: visible;	
+		float: right;
+	}
+	#footer-passage1-footer h4
+	{
+		color:white;
+		overflow: visible;	
+		float: left;
+	}
+
+	
+	#footer-passage2
+	{
+		width: 20%;
+		height:35%;
+		float: left;
+		border: solid 2px black;
+		box-sizing: border-box;	
+		margin-top:5%;
+		margin-left:4%;
+		overflow: visible;
+	}
+	#footer-passage2-head
+	{
+		width: 100%;	
+		height:25%;
+		border: solid 2px red;
+		box-sizing: border-box;	
+		float: left;	
+	}
+	#footer-passage2-head p
+	{
+		color:white;
+		overflow: visible;
+		font-size:16px;
+	}
+	#footer-passage2-body
+	{
+		float: left;
+		width: 100%;
+		height:50%;
+		border: solid 2px blueviolet;
+		box-sizing: border-box;	
+		overflow: visible;
+	}
+	#footer-passage2-body p
+	{
+		color:white;
+		overflow: visible;
+		font-size: 60px;
+		text-align: center;
+		padding: top 15%;
+	}
+	#footer-passage2-footer
+	{
+		width: 100%;
+		height:25%;
+		border: solid 2px green;
+		box-sizing: border-box;	
+		float: left;
+		overflow: visible;
+	}
+	#footer-passage2-footer p
+	{
+		color:white;
+		overflow: visible;	
+		float: right;
+	}
+	#footer-passage2-footer h4
+	{
+		color:white;
+		overflow: visible;	
+		float: left;
+	}
+
+
+	#footer-passage3
+	{
+		width: 20%;
+		height:35%;
+		float: left;
+		border: solid 2px black;
+		box-sizing: border-box;	
+		margin-top:5%;
+		margin-left:4%;
+		overflow: visible;
+	}
+	#footer-passage3-head
+	{
+		width: 100%;	
+		height:25%;
+		border: solid 2px red;
+		box-sizing: border-box;	
+		float: left;	
+	}
+	#footer-passage3-head p
+	{
+		color:white;
+		overflow: visible;
+		font-size:16px;
+	}
+	#footer-passage3-body
+	{
+		float: left;
+		width: 100%;
+		height:50%;
+		border: solid 2px blueviolet;
+		box-sizing: border-box;	
+		overflow: visible;
+	}
+	#footer-passage3-body p
+	{
+		color:white;
+		overflow: visible;
+		font-size: 60px;
+		text-align: center;
+		padding: top 15%;
+	}
+	#footer-passage3-footer
+	{
+		width: 100%;
+		height:25%;
+		border: solid 2px green;
+		box-sizing: border-box;	
+		float: left;
+		overflow: visible;
+	}
+	#footer-passage3-footer p
+	{
+		color:white;
+		overflow: visible;	
+		float: right;
+	}
+	#footer-passage3-footer h4
+	{
+		color:white;
+		overflow: visible;	
+		float: left;
+	}
+	#footer-passage4
+	{
+		width: 20%;
+		height:35%;
+		float: left;
+		border: solid 2px black;
+		box-sizing: border-box;	
+		margin-top:5%;
+		margin-left:4%;
+		overflow: visible;
+	}
+	#footer-passage4-head
+	{
+		width: 100%;	
+		height:25%;
+		border: solid 2px red;
+		box-sizing: border-box;	
+		float: left;	
+	}
+	#footer-passage4-head p
+	{
+		color:white;
+		overflow: visible;
+		font-size:16px;
+	}
+	#footer-passage4-body
+	{
+		float: left;
+		width: 100%;
+		height:50%;
+		border: solid 2px blueviolet;
+		box-sizing: border-box;	
+		overflow: visible;
+	}
+	#footer-passage4-body p
+	{
+		color:white;
+		overflow: visible;
+		font-size: 60px;
+		text-align: center;
+		padding: top 15%;
+	}
+	#footer-passage4-footer
+	{
+		width: 100%;
+		height:25%;
+		border: solid 2px green;
+		box-sizing: border-box;	
+		float:left;
+		overflow: visible;
+	}
+	#footer-passage4-footer p
+	{
+		color:white;
+		overflow: visible;	
+		float: right;
+	}
+	#footer-passage4-footer h4
+	{
+		color:white;
+		overflow: visible;	
+		float: left;
+	}
+	
