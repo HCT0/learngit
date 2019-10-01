@@ -1,0 +1,38 @@
+1爬取数据的大概步骤
+	获取url的目标网页的源代码
+	进行html的代码的解析
+	针对HTML，进行需要信息的定位
+	保存生成的信息到zip
+	使用循环，输出到存储容器
+****该步骤是静态网页****
+获取网站的方法：
+	*需要准备headers
+	import requests
+	x = requests.get(url,headers = headers)
+代码的解析
+	*获取的x并不是真正的网页，x.text才是
+	bs4的方法
+		import beautifulsoup
+		html_data = x.beautifulsoup(x.text,'lxml')
+
+	lxml的etree方法
+		import etree
+		html_data = etree.HTML(x.text)
+需要的信息的定位
+	bs4的select方法
+		y1 = html_data.select('select语句')
+		y2 = html_data.select（'select语句'
+	使用xpath
+		y1 = html_data.HTML('xpath语句')
+		y2 = html_data.html('xpath 语句')
+	使用re的findall方法（正则表达式）
+		import re
+		y1 = re.findall('正则表达式的规则',x.text)*直接使用网页的源代码
+	
+保存在zip中
+	因为每一个返回的数据是一个list，多个list的组合是zip
+
+	
+
+
+	
