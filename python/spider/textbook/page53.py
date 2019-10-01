@@ -26,3 +26,4 @@ if __name__ == '__main__':
         get_info(url)
         time.sleep(2)
 f.close()
+ 
